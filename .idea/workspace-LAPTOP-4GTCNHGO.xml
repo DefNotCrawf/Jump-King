@@ -38,7 +38,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0"
+    CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5"
+    DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -63,10 +65,14 @@
     <state x="619" y="242" key="run.anything.popup" timestamp="1642995263144">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="619" y="242" key="run.anything.popup/-3840.789.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1642995263144" />
-    <state x="625" y="228" width="672" height="678" key="search.everywhere.popup" timestamp="1642994001115">
+    <state x="619" y="242" key="run.anything.popup/-3840.789.1536.832/0.0.1920.1040@0.0.1920.1040"
+      timestamp="1642995263144" />
+    <state x="625" y="228" width="672" height="678" key="search.everywhere.popup"
+      timestamp="1642994001115">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="625" y="228" width="672" height="678" key="search.everywhere.popup/-3840.789.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1642994001115" />
+    <state x="625" y="228" width="672" height="678"
+      key="search.everywhere.popup/-3840.789.1536.832/0.0.1920.1040@0.0.1920.1040"
+      timestamp="1642994001115" />
   </component>
 </project>

@@ -26,7 +26,7 @@ class Line {
         this.ensurePointsAreInOrder();
 
 
-        this.midPoint =  createVector((x1+x2)/2,(y1+y2)/2);
+        this.midPoint = createVector((x1 + x2) / 2, (y1 + y2) / 2);
 
 
         this.diagonalCollisionInfo = new DiagonalCollisionInfo();
@@ -36,17 +36,17 @@ class Line {
 
     Show() {
         push();
-        stroke(255,0,0)
+        stroke(255, 0, 0)
         strokeWeight(3)
         line(this.x1, this.y1, this.x2, this.y2);
-        ellipse(this.midPoint.x,this.midPoint.y,10,10)
+        ellipse(this.midPoint.x, this.midPoint.y, 10, 10)
         pop();
     }
 
 
     ensurePointsAreInOrder() {
-        if(this.isHorizontal || this.isVertical){
-            if (this.x1>this.x2 || this.y1 > this.y2){
+        if (this.isHorizontal || this.isVertical) {
+            if (this.x1 > this.x2 || this.y1 > this.y2) {
                 let temp = this.x1;
                 this.x1 = this.x2;
                 this.x2 = temp;

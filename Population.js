@@ -72,14 +72,14 @@ class Population {
         let highestPlayer = this.players[this.currentHighestPlayerIndex];
         let highestLevelNo = this.players[this.currentHighestPlayerIndex].currentLevelNo;
 
-        if(highestPlayer.currentLevelNo > highestPlayer.bestLevelReached && !highestPlayer.progressionCoinPickedUp){
-            highestLevelNo -=1;
+        if (highestPlayer.currentLevelNo > highestPlayer.bestLevelReached && !highestPlayer.progressionCoinPickedUp) {
+            highestLevelNo -= 1;
         }
         showLevel(highestLevelNo);
         alreadyShowingSnow = false;
         this.showingLevelNo = highestLevelNo;
         for (let i = 0; i < this.players.length; i++) {
-            if (this.players[i].currentLevelNo >= highestLevelNo - 1 && this.players[i].currentLevelNo <=highestLevelNo ) {
+            if (this.players[i].currentLevelNo >= highestLevelNo - 1 && this.players[i].currentLevelNo <= highestLevelNo) {
                 this.players[i].Show();
             }
         }
@@ -122,7 +122,7 @@ class Population {
             let parent = this.SelectParent();
             let baby = parent.clone()
             // if the parent fell to the previous level then mutate the baby at the action that caused them to fall
-            if(parent.fellToPreviousLevel){
+            if (parent.fellToPreviousLevel) {
                 baby.brain.mutateActionNumber(parent.fellOnActionNo);
             }
             baby.brain.mutate();

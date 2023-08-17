@@ -1702,29 +1702,29 @@ function setupLevels() {
     // levels[0].coins.push(new Coin( 595,30 , "progress" ));
 
 
-    levels[1].coins.push(new Coin( 143,148 , "progress" ));
-    levels[1].coins.push(new Coin( 155,142 , "progress" ));
-    levels[1].coins.push(new Coin( 65,148 , "progress" ));
+    levels[1].coins.push(new Coin(143, 148, "progress"));
+    levels[1].coins.push(new Coin(155, 142, "progress"));
+    levels[1].coins.push(new Coin(65, 148, "progress"));
 
-    levels[2].coins.push(new Coin( 125,187 , "progress" ));
-    levels[2].coins.push(new Coin( 51,183 , "progress" ));
-    levels[3].coins.push(new Coin( 843,125 , "progress" ));
-    levels[3].coins.push(new Coin( 411,170 , "progress" ));
-    levels[4].coins.push(new Coin( 137,173 , "progress" ));
-    levels[5].coins.push(new Coin( 1122,65 , "progress" ));
-    levels[5].coins.push(new Coin( 1121,151 , "progress" ));
-    levels[5].coins.push(new Coin( 1101,92 , "progress" ));
-    levels[6].coins.push(new Coin( 349,74 , "progress" ));
-    levels[7].coins.push(new Coin( 154,293 , "progress" ));
-    levels[8].coins.push(new Coin( 602,182 , "progress" ));
-    levels[12].coins.push(new Coin( 1135,37 , "progress" ));
-    levels[13].coins.push(new Coin( 665,193 , "progress" ));
-    levels[13].coins.push(new Coin( 587,194 , "progress" ));
-    levels[17].coins.push(new Coin( 975,147 , "progress" ));
-    levels[22].coins.push(new Coin( 1139,111 , "progress" ));
-    levels[36].coins.push(new Coin( 686,205 , "progress" ));
-    levels[37].coins.push(new Coin( 1005,181 , "progress" ));
-    levels[39].coins.push(new Coin( 365,187 , "progress" ));
+    levels[2].coins.push(new Coin(125, 187, "progress"));
+    levels[2].coins.push(new Coin(51, 183, "progress"));
+    levels[3].coins.push(new Coin(843, 125, "progress"));
+    levels[3].coins.push(new Coin(411, 170, "progress"));
+    levels[4].coins.push(new Coin(137, 173, "progress"));
+    levels[5].coins.push(new Coin(1122, 65, "progress"));
+    levels[5].coins.push(new Coin(1121, 151, "progress"));
+    levels[5].coins.push(new Coin(1101, 92, "progress"));
+    levels[6].coins.push(new Coin(349, 74, "progress"));
+    levels[7].coins.push(new Coin(154, 293, "progress"));
+    levels[8].coins.push(new Coin(602, 182, "progress"));
+    levels[12].coins.push(new Coin(1135, 37, "progress"));
+    levels[13].coins.push(new Coin(665, 193, "progress"));
+    levels[13].coins.push(new Coin(587, 194, "progress"));
+    levels[17].coins.push(new Coin(975, 147, "progress"));
+    levels[22].coins.push(new Coin(1139, 111, "progress"));
+    levels[36].coins.push(new Coin(686, 205, "progress"));
+    levels[37].coins.push(new Coin(1005, 181, "progress"));
+    levels[39].coins.push(new Coin(365, 187, "progress"));
 
     levels[1].hasProgressionCoins = true;
     levels[2].hasProgressionCoins = true;

@@ -11,8 +11,8 @@ class AIAction {
     }
 
     mutate() {
-        this.holdTime += random(-0.3,0.3);
-        this.holdTime = constrain(this.holdTime,0.1,1);
+        this.holdTime += random(-0.3, 0.3);
+        this.holdTime = constrain(this.holdTime, 0.1, 1);
     }
 }
 
@@ -46,7 +46,7 @@ class Brain {
         }
 
         let holdTime = random(0.1, 1);
-        if(random()<chanceOfFullJump){
+        if (random() < chanceOfFullJump) {
             holdTime = 1;
         }
 
@@ -59,7 +59,7 @@ class Brain {
     }
 
     getNextAction() {
-        if(this.currentInstructionNumber >= this.instructions.length){
+        if (this.currentInstructionNumber >= this.instructions.length) {
             return null;
         }
         this.currentInstructionNumber += 1;
@@ -88,20 +88,20 @@ class Brain {
         }
     }
 
-    mutateActionNumber(actionNumber){
+    mutateActionNumber(actionNumber) {
         // let mutationRate = 0.1;
 
-        actionNumber -=1; // this is done because im a bad programmer
+        actionNumber -= 1; // this is done because im a bad programmer
         let chanceOfNewInstruction = 0.2;
         if (random() < chanceOfNewInstruction) {
             this.instructions[actionNumber] = this.getRandomAction()
-        } else{
+        } else {
             this.instructions[actionNumber].mutate();
         }
     }
 
-    increaseMoves(increaseMovesBy){
-        for(var i = 0 ; i< increaseMovesBy ;i++){
+    increaseMoves(increaseMovesBy) {
+        for (var i = 0; i < increaseMovesBy; i++) {
             this.instructions.push(this.getRandomAction());
         }
 

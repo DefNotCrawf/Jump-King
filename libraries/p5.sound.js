@@ -1,7 +1,7 @@
 /*! p5.sound.js v0.3.2 2016-11-01 */
 (function (root, factory) {
   if (typeof define === 'function' && define.amd)
-    define('p5.sound', ['p5'], function (p5) { (factory(p5));});
+    define('p5.sound', ['p5'], function (p5) { (factory(p5)); });
   else if (typeof exports === 'object')
     factory(require('../p5'));
   else
@@ -85,7 +85,7 @@
       'use strict';
       function fixSetTarget(param) {
         if (!param)
-            // if NYI, just return
+          // if NYI, just return
           return;
         if (!param.setTargetAtTime)
           param.setTargetAtTime = param.setTargetValueAtTime;
@@ -917,23 +917,23 @@
           if (request.status == 200) {
             // on sucess loading file:
             ac.decodeAudioData(request.response, // success decoding buffer:
-                function (buff) {
-                  self.buffer = buff;
-                  self.panner.inputChannels(buff.numberOfChannels);
-                  if (callback) {
-                    callback(self);
-                  }
-                }, // error decoding buffer. "e" is undefined in Chrome 11/22/2015
-                function (e) {
-                  var err = new CustomError('decodeAudioData', errorTrace, self.url);
-                  var msg = 'AudioContext error at decodeAudioData for ' + self.url;
-                  if (errorCallback) {
-                    err.msg = msg;
-                    errorCallback(err);
-                  } else {
-                    console.error(msg + '\n The error stack trace includes: \n' + err.stack);
-                  }
-                });
+              function (buff) {
+                self.buffer = buff;
+                self.panner.inputChannels(buff.numberOfChannels);
+                if (callback) {
+                  callback(self);
+                }
+              }, // error decoding buffer. "e" is undefined in Chrome 11/22/2015
+              function (e) {
+                var err = new CustomError('decodeAudioData', errorTrace, self.url);
+                var msg = 'AudioContext error at decodeAudioData for ' + self.url;
+                if (errorCallback) {
+                  err.msg = msg;
+                  errorCallback(err);
+                } else {
+                  console.error(msg + '\n The error stack trace includes: \n' + err.stack);
+                }
+              });
           } else {
             var err = new CustomError('loadSound', errorTrace, self.url);
             var msg = 'Unable to load ' + self.url + '. The request status was: ' + request.status + ' (' + request.statusText + ')';
@@ -7651,26 +7651,26 @@
         if (request.status == 200) {
           // on success loading file:
           ac.decodeAudioData(request.response, function (buff) {
-                var buffer = {};
-                var chunks = path.split('/');
-                buffer.name = chunks[chunks.length - 1];
-                buffer.audioBuffer = buff;
-                self.impulses.push(buffer);
-                self.convolverNode.buffer = buffer.audioBuffer;
-                if (callback) {
-                  callback(buffer);
-                }
-              }, // error decoding buffer. "e" is undefined in Chrome 11/22/2015
-              function (e) {
-                var err = new CustomError('decodeAudioData', errorTrace, self.url);
-                var msg = 'AudioContext error at decodeAudioData for ' + self.url;
-                if (errorCallback) {
-                  err.msg = msg;
-                  errorCallback(err);
-                } else {
-                  console.error(msg + '\n The error stack trace includes: \n' + err.stack);
-                }
-              });
+            var buffer = {};
+            var chunks = path.split('/');
+            buffer.name = chunks[chunks.length - 1];
+            buffer.audioBuffer = buff;
+            self.impulses.push(buffer);
+            self.convolverNode.buffer = buffer.audioBuffer;
+            if (callback) {
+              callback(buffer);
+            }
+          }, // error decoding buffer. "e" is undefined in Chrome 11/22/2015
+            function (e) {
+              var err = new CustomError('decodeAudioData', errorTrace, self.url);
+              var msg = 'AudioContext error at decodeAudioData for ' + self.url;
+              if (errorCallback) {
+                err.msg = msg;
+                errorCallback(err);
+              } else {
+                console.error(msg + '\n The error stack trace includes: \n' + err.stack);
+              }
+            });
         } else {
           var err = new CustomError('loadConvolver', errorTrace, self.url);
           var msg = 'Unable to load ' + self.url + '. The request status was: ' + request.status + ' (' + request.statusText + ')';
